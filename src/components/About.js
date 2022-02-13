@@ -1,16 +1,19 @@
 import React from 'react'
 import { useEffect } from 'react'
 import Aos from 'aos'
-import { AboutStyle } from './Styles/About.styles'
-import { GlobalStyle } from './GlobalStyle'
+import { AboutContainer } from './Styles/About.styles'
+
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({duration: 3000})
+  }, [])
+
   return (
     <>
-      <GlobalStyle />
-      <AboutStyle>
-        <h1>Hello</h1>
-      </AboutStyle>
+      <AboutContainer data-Aos="fade-right">
+        
+      </AboutContainer>
     </>
   )
 }
