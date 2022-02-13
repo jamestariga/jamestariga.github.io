@@ -1,8 +1,13 @@
 import React from 'react'
+import About from './About'
+import NavBar from './NavBar'
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <>
+      <About />
+      <NavBar />
+    </>
   )
 }
 
