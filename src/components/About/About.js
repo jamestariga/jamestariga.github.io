@@ -1,12 +1,12 @@
 import React from 'react'
 import { useEffect } from 'react'
 import Aos from 'aos'
-import { AboutContainer } from './Styles/About.styles'
+import { AboutContainer } from '../Styles/About.styles'
 
 
 const About = () => {
   useEffect(() => {
-    Aos.init({duration: 3000})
+    Aos.init({duration: 2000})
   }, [])
 
   return (
