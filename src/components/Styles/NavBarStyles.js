@@ -2,27 +2,31 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const NavBarContainer = styled.nav`
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  height: ${(props) => (props.extendNavbar ? '100vh' : '20vh')};
+  height: ${(props) => (props.extendNavbar ? '100vh' : '80px')};
   background: transparent;
-  text-align: center;
+
+  @media (min-width: 700px) {
+    height: 80px;
+  }
 `
 
 export const LeftContainer = styled.div`
   flex: 30%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding-right: 5%;
+  padding-left: 50px;
 `;
 
 export const RightContainer = styled.div`
   flex: 70%;
   display: flex;
-  padding-left: 50px;
+  justify-content: flex-end;
+  padding-left: 5%;
 `;
 
 export const NavbarInnerContainer = styled.div`

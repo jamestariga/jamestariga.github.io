@@ -4,7 +4,6 @@ export const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 50%;
   height: 20vh;
   padding: 5rem;
   margin: 70rem 10rem 70rem 10rem;
@@ -17,5 +16,5 @@ export const AboutContainer = styled.div`
 `
 
 export const AboutInnerContainer = styled.div`
-  
+
 `

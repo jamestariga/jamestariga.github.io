@@ -23,13 +23,13 @@ const NavBar = () => {
     <>
       <NavBarContainer extendNavbar={extendNavbar} data-Aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
         <NavbarInnerContainer>
-          <LeftContainer>
+          <RightContainer>
             <NavbarLinkContainer>
               <NavBarLink to='/'>Home</NavBarLink>
               <NavBarLink to='/'>Skills</NavBarLink>
               <NavBarLink to='/'>Projects</NavBarLink>
             </NavbarLinkContainer>
-          </LeftContainer>
+          </RightContainer>
         </NavbarInnerContainer>
       </NavBarContainer>
     </>
