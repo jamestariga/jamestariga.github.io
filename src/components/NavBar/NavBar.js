@@ -4,19 +4,24 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import {
   NavBarContainer, NavbarInnerContainer,
-  LeftContainer, NavbarLinkContainer, NavBarLink
+  LeftContainer, RightContainer, NavbarLinkContainer, NavBarLink
 } from '../Styles/NavBarStyles'
 
 const NavBar = () => {
   const [extendNavbar, setExtendNavbar] = useState(false)
 
   useEffect(() => {
-    Aos.init({duration: 2000})
+    Aos.init({
+      duration: 2000,
+      delay: 500,
+      mirror: true,
+      offset: 200
+    })
   }, [])
 
   return (
     <>
-      <NavBarContainer data-Aos="fade-down">
+      <NavBarContainer extendNavbar={extendNavbar} data-Aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
         <NavbarInnerContainer>
           <LeftContainer>
             <NavbarLinkContainer>

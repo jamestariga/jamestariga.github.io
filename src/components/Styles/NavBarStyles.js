@@ -6,13 +6,13 @@ export const NavBarContainer = styled.nav`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 20vh;
+  height: ${(props) => (props.extendNavbar ? '100vh' : '20vh')};
   background: transparent;
   text-align: center;
 `
 
 export const LeftContainer = styled.div`
-  flex: 70%;
+  flex: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -20,7 +20,7 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  flex: 30%;
+  flex: 70%;
   display: flex;
   padding-left: 50px;
 `;
