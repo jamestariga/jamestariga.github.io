@@ -19,7 +19,15 @@ export const LeftContainer = styled.div`
   flex: 30%;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 10rem;
+
+  @media (max-width: 965px) {
+    margin: 0rem 2rem 0 0;
+  }
+  
+  @media (max-width: 450px) {
+    margin: 0rem 2rem 0 0;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -41,6 +49,7 @@ export const NavbarInnerContainer = styled.div`
 
 export const NavbarLinkContainer = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const NavBarLink = styled(Link)`
@@ -61,3 +70,31 @@ export const NavbarLinkExtended = styled(Link)`
   text-decoration: none;
   margin: 10px;
 `;
+
+export const OpenLinksButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+  
+  @media (min-width: 965px) {
+    display: none;
+  }
+`
+
+export const NavbarExtendedContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+`
+export const Branding = styled.h1`
+  font-size: 2rem;
+  color: #fff;
+`
