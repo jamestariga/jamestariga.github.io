@@ -1,18 +1,15 @@
 import React from 'react'
 import { useEffect } from 'react'
-import Aos from 'aos'
-import { AboutContainer } from '../Styles/About.styles'
-import 'aos/dist/aos.css'
+import { AboutContainer, AboutInnerContainer } from '../Styles/About.styles'
 
 const About = () => {
-  useEffect(() => {
-    Aos.init({duration: 2000})
-  }, [])
 
   return (
     <>
-      <AboutContainer data-Aos="fade-right">
-        
+      <AboutContainer data-Aos="fade-right" data-aos-delay="1500" data-aos-mirror="false">
+        <AboutInnerContainer>
+          hi
+        </AboutInnerContainer>
       </AboutContainer>
     </>
   )

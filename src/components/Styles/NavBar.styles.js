@@ -26,7 +26,11 @@ export const RightContainer = styled.div`
   flex: 70%;
   display: flex;
   justify-content: flex-end;
-  padding-left: 5%;
+  padding-right: 5%;
+
+  @media (max-width: 850px) {
+    padding-right: 2%;
+  }
 `;
 
 export const NavbarInnerContainer = styled.div`
