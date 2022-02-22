@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { AboutContainer, AboutInnerContainer } from '../Styles/About.styles'
 
 const About = () => {

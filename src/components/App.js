@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" />
           <Route path="/skills" />
-          <Route path="/project" />
+          <Route path="/projects" />
         </Routes>
       </Router>
       <About />
