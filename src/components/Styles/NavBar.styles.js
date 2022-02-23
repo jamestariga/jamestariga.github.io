@@ -20,13 +20,13 @@ export const LeftContainer = styled.div`
   align-items: center;
   padding-left: 5rem;
 
-  @media (min-width: 971px) {
+  @media (max-width: 971px) {
     margin: 0rem 2rem 0 0;
     padding-left: 3.5rem;
   }
   
-  @media (min-width: 450px) {
-    margin-right: 2rem;
+  @media (max-width: 450px) {
+    padding-left: 2rem;
   }
 `
 
@@ -35,7 +35,7 @@ export const RightContainer = styled.div`
   justify-content: space-around;
   padding-right: 5%;
 
-  @media (min-width: 971px) {
+  @media (max-width: 971px) {
     padding-right: 2%;
   }
 `
