@@ -28,7 +28,7 @@ const NavBar = () => {
                 setExtendNavbar((curr) => !curr)
               }}
             >
-              { extendNavbar ? <AiOutlineMenu style={style}/> : <AiOutlineClose style={style}/> }
+              { extendNavbar ? <AiOutlineClose style={style}/> : <AiOutlineMenu style={style}/> }
               </OpenLinksButton>
             </NavbarLinkContainer>
           </RightContainer>
