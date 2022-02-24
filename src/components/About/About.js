@@ -1,5 +1,9 @@
 import React from 'react'
-import { AboutContainer, AboutInnerContainer } from '../Styles/About.styles'
+import {
+  AboutContainer, AboutInnerContainer, ImageContainer,
+  DescriptionContainer, ImageDisplay
+} from '../Styles/About.styles'
+import James from '../../Images/James.jpg'
 
 const About = () => {
 
@@ -7,7 +11,12 @@ const About = () => {
     <>
       <AboutContainer data-Aos="fade-right" data-aos-delay="1500" data-aos-mirror="false">
         <AboutInnerContainer>
-          hi
+          <ImageContainer>
+            <ImageDisplay src={James} alt='James' />
+          </ImageContainer>
+          <DescriptionContainer>
+
+          </DescriptionContainer>
         </AboutInnerContainer>
       </AboutContainer>
     </>

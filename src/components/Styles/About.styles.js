@@ -19,13 +19,14 @@ export const AboutContainer = styled.div`
     padding: 3rem 1.5rem;
   }
   
-  @media (max-width: 450px) {
-    margin: 5rem 2rem;
-    padding: 1.5rem;
+  @media (max-width: 650px) {
+    margin: 10rem 2rem;
+    padding: 2rem;
   }
 `
 
 export const AboutInnerContainer = styled.div`
+  display: flex;
   width: 100%;
   height: 100%;
   border: 1px solid;
@@ -35,7 +36,28 @@ export const AboutInnerContainer = styled.div`
     padding: 1rem;
   }
   
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     padding: 0.5rem;
   }
+`
+
+export const ImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border: 1px solid;
+  height: 100%;
+  margin: 0 1rem;
+`
+
+export const DescriptionContainer = styled.div`
+  width: 50%;
+  border: 1px solid;
+  height: 100%;
+  margin: 0 1rem;
+`
+
+export const ImageDisplay = styled.img`
+  max-width: 100%;
+  height: 100%;
 `

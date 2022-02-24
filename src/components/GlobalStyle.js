@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(270deg, #f69ec4, #f9dd94);
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 
     @media (max-width: 450px) {
       max-width: 100%;
