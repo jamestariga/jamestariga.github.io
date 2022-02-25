@@ -1,10 +1,13 @@
 import styled from "styled-components"
+import { AiOutlineGithub } from 'react-icons/ai'
+import { BsLinkedin } from 'react-icons/bs'
+import { SiDevpost } from 'react-icons/si'
 
 export const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: auto;
   padding: 5rem;
   margin: 10rem 10rem 20rem 10rem;
   background: rgba( 255, 255, 255, 0.1 );
@@ -27,37 +30,120 @@ export const AboutContainer = styled.div`
 
 export const AboutInnerContainer = styled.div`
   display: flex;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  border: 1px solid;
-  padding: 2rem;
+  height: auto;
+  /* border: 1px solid; */
 
-  @media (max-width: 970px) {
-    padding: 1rem;
-  }
-  
-  @media (max-width: 650px) {
-    padding: 0.5rem;
-  }
+  @media (max-width: 1128px) {
+    flex-wrap: wrap;
+  }  
 `
 
-export const ImageContainer = styled.div`
+export const LeftContainer = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 50%;
-  border: 1px solid;
-  height: 100%;
-  margin: 0 1rem;
+  flex-direction: column;
+  width: 30%;
+  /* border: 1px solid; */
+  height: auto;
+  padding: 2em 2em 0 2em;
+
+  @media (max-width: 1128px) {
+    width: 100%;
+  }
 `
 
 export const DescriptionContainer = styled.div`
-  width: 50%;
-  border: 1px solid;
-  height: 100%;
-  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* border: 1px solid; */
+  height: auto;
+  padding: 2rem;
+
+  @media (max-width: 1128px) {
+    width: 100%;
+  }
 `
 
 export const ImageDisplay = styled.img`
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+
+  @media (max-width: 450px) {
+    max-width: 150px;
+  }
+`
+
+export const Title = styled.h4`
+  font-size: 1.5em;
+  color: #fff;
+
+  @media (max-width: 850px) {
+    text-align: center;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 1em;
+  }
+`
+
+export const IconsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+export const IconsGitHub = styled(AiOutlineGithub)`
+  color: #000;
+  transform: scale(2);
+  margin: 0.5rem;
+  padding: 0 1em;
+
+  @media (max-width: 652px) {
+    transform: scale(1.75);
+    margin: 0.25rem;
+  }
+`
+
+export const IconsLinkedIn = styled(BsLinkedin)`
+  color: #0e76a8;
+  transform: scale(2);
+  margin: 0.5rem;
+  padding: 0 1em;
+
+  @media (max-width: 652px) {
+    transform: scale(1.75);
+    margin: 0.25rem;
+  }
+`
+
+export const IconsDev = styled(SiDevpost)`
+  color: #003E54;
+  transform: scale(2);
+  margin: 0.5rem;
+  padding: 0 1em;
+
+  @media (max-width: 652px) {
+    transform: scale(1.75);
+    margin: 0.25rem;
+  }
+`
+
+export const Text = styled.p`
+  font-size: 1.25em;
+  color: #fff;
+  text-align: left;
+  letter-spacing: 0.01em;
+
+  @media (max-width: 850px) {
+    font-size: 1em;
+  }
+
+  @media (max-width: 652px) {
+    font-size: 0.85em;
+    text-align: center;
+  }
 `
