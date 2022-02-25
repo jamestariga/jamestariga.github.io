@@ -16,7 +16,7 @@ const NavBar = () => {
       <NavBarContainer extendNavbar={ extendNavbar } data-Aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
         <NavbarInnerContainer>
           <LeftContainer>
-            <Branding>James Tariga</Branding>
+            <Branding>&#123; James Tariga &#125;</Branding>
           </LeftContainer>
           <RightContainer>
             <NavbarLinkContainer>
