@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const SkillsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
   flex-direction: column;
   height: auto;
@@ -16,7 +16,7 @@ export const SkillsContainer = styled.div`
   border: 1px solid rgba( 255, 255, 0, 0.18 );
 
   @media (max-width: 1129px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);;
   }
 
   @media (max-width: 970px) {
@@ -26,5 +26,6 @@ export const SkillsContainer = styled.div`
   @media (max-width: 650px) {
     margin: 10rem 2rem;
     padding: 1rem;
+    grid-template-columns: 1fr;
   }
 `
