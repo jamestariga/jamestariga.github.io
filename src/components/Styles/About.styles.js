@@ -24,7 +24,7 @@ export const AboutContainer = styled.div`
   
   @media (max-width: 650px) {
     margin: 10rem 2rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 `
 
@@ -53,6 +53,10 @@ export const LeftContainer = styled.div`
   @media (max-width: 1128px) {
     width: 100%;
   }
+
+  @media (max-width: 650px) {
+    padding: 1rem;
+  }
 `
 
 export const DescriptionContainer = styled.div`
@@ -65,6 +69,10 @@ export const DescriptionContainer = styled.div`
 
   @media (max-width: 1128px) {
     width: 100%;
+  }
+
+  @media (max-width: 650px) {
+    padding: 1rem;
   }
 `
 
@@ -80,7 +88,7 @@ export const ImageDisplay = styled.img`
 
 export const Title = styled.h4`
   font-size: 1.5em;
-  color: #fff;
+  color: #ff9966;
 
   @media (max-width: 850px) {
     text-align: center;

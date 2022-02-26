@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <>
-      <NavBarContainer extendNavbar={ extendNavbar } data-Aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
+      <NavBarContainer extendNavbar={ extendNavbar } data-aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
         <NavbarInnerContainer>
           <LeftContainer>
             <Branding>&#123; James Tariga &#125;</Branding>
@@ -34,7 +34,7 @@ const NavBar = () => {
           </RightContainer>
         </NavbarInnerContainer>
         {extendNavbar && (
-          <NavbarExtendedContainer data-Aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
+          <NavbarExtendedContainer data-aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
             <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
             <NavbarLinkExtended to="/">Skills</NavbarLinkExtended>
             <NavbarLinkExtended to="/">Projects</NavbarLinkExtended>

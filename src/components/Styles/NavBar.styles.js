@@ -7,7 +7,6 @@ export const NavBarContainer = styled.nav`
   align-items: center;
   width: 100%;
   height: ${(props) => (props.extendNavbar ? '100vh' : '80px')};
-  background: transparent;
 
   @media (min-width: 971px) {
     height: 80px;
@@ -41,6 +40,10 @@ export const RightContainer = styled.div`
 `
 
 export const NavbarInnerContainer = styled.div`
+  /* z-index: 10000;
+  background: transparent;
+  position: fixed;
+  overflow: hidden; */
   width: 100%;
   height: 80px;
   display: flex;
@@ -103,8 +106,10 @@ export const NavbarExtendedContainer = styled.div`
 `
 
 export const Branding = styled.h1`
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&family=Poppins:wght@400;500&display=swap');
+  font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
-  color: #fff;
+  color: #ff9966;
 
   @media (max-width: 971px) {
     font-size: 1.75rem;

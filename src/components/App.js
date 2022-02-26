@@ -4,7 +4,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import NavBar from './NavBar/NavBar'
 import About from './About/About'
-import Project from './Projects/Projects'
+import Skills from './Skills/Skills'
 import GlobalStyle from './GlobalStyle'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -31,7 +31,7 @@ function App() {
         </Routes>
       </Router>
       <About />
-      <Project />
+      <Skills />
     </>
   )
 }

@@ -15,7 +15,7 @@ const About = () => {
         <AboutInnerContainer>
           <LeftContainer>
             <ImageDisplay src={JamesPFP} alt='James' />
-            <Title>Web Developer - 3rd Year Student</Title>
+            <Title>Front End Developer, Student</Title>
             <IconsContainer>
               <a href='https://github.com/jamestariga'><IconsGitHub /></a>
               <a href='https://www.linkedin.com/in/james-tariga/'><IconsLinkedIn /></a>
