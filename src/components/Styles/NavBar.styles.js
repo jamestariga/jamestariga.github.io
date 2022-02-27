@@ -75,7 +75,7 @@ export const NavbarLinkExtended = styled(Link)`
   font-size: 2rem;
   text-decoration: none;
   text-align: center;
-  margin: 5rem 2rem;
+  margin: 2rem;
   padding: 1rem;
   width: 100%;
 
@@ -103,6 +103,7 @@ export const NavbarExtendedContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5rem;
 
   @media (min-width: 971px) {
     display: none;

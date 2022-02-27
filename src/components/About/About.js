@@ -11,7 +11,6 @@ const About = () => {
 
   return (
     <>
-      {/* <div id='about'></div> */}
       <AboutContainer id='about' data-aos="fade-right" data-aos-delay="1500" data-aos-mirror="false">
         <AboutInnerContainer>
           <LeftContainer>
