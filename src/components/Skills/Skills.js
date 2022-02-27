@@ -7,7 +7,7 @@ const Skills = () => {
 
   return (
     <>
-      <SkillsContainer id='skills' data-aos="fade-right">
+      <SkillsContainer id='skills' data-aos="fade-right" data-aos-delay="50">
         {SkillsData.map((item, idx) => {
           return (
             <ProgressBar key={idx} bgColor={item.bgColor} title={item.title} completed={item.completed} />

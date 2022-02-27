@@ -41,6 +41,7 @@ export const ProgressContainer = styled.div`
 export const Filler = styled.div`
   display: flex;
   justify-content: right;
+  transition: width 1s ease-in-out;
   align-items: center;
   height: 100%;
   width: ${props => props.completed};

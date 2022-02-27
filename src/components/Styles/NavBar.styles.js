@@ -58,7 +58,7 @@ export const NavbarLinkContainer = styled.div`
 
 export const NavBarLink = styled(Link)`
   cursor: pointer;
-  color: #fff;
+  color: #ff9966;
   text-decoration: none;
   font-size: 1.5rem;
   padding: 1rem;
@@ -71,7 +71,7 @@ export const NavBarLink = styled(Link)`
 
 export const NavbarLinkExtended = styled(Link)`
   cursor: pointer;
-  color: #fff;
+  color: #ff9966;
   font-size: 2rem;
   text-decoration: none;
   text-align: center;
@@ -91,7 +91,7 @@ export const OpenLinksButton = styled.button`
   height: 50px;
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   cursor: pointer;
   
   @media (min-width: 971px) {
