@@ -20,7 +20,7 @@ const NavBar = () => {
           </LeftContainer>
           <RightContainer>
             <NavbarLinkContainer>
-              <NavBarLink to='about' smooth='true'>About</NavBarLink>
+              <NavBarLink to='about' smooth='true' offset={-180}>About</NavBarLink>
               <NavBarLink to='skills' smooth='true'>Skills</NavBarLink>
               <NavBarLink to='projects' smooth='true'>Projects</NavBarLink>
               <OpenLinksButton

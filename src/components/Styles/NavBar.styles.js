@@ -41,9 +41,9 @@ export const RightContainer = styled.div`
 
 export const NavbarInnerContainer = styled.div`
   z-index: 10000;
-  background: rgba( 231, 231, 156, 0.6 );
-  backdrop-filter: blur( 2.5px );
-  -webkit-backdrop-filter: blur( 2.5px );
+  background: rgba(231, 231, 156, 0.6);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
   position: fixed;
   overflow: hidden;
   width: 100%;
