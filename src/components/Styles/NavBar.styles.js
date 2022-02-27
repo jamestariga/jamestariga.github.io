@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 export const NavBarContainer = styled.nav`
   display: flex;
@@ -40,10 +40,12 @@ export const RightContainer = styled.div`
 `
 
 export const NavbarInnerContainer = styled.div`
-  /* z-index: 10000;
-  background: transparent;
+  z-index: 10000;
+  background: rgba( 231, 231, 156, 0.6 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
   position: fixed;
-  overflow: hidden; */
+  overflow: hidden;
   width: 100%;
   height: 80px;
   display: flex;
@@ -55,6 +57,7 @@ export const NavbarLinkContainer = styled.div`
 `
 
 export const NavBarLink = styled(Link)`
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
@@ -67,11 +70,12 @@ export const NavBarLink = styled(Link)`
 `
 
 export const NavbarLinkExtended = styled(Link)`
+  cursor: pointer;
   color: #fff;
   font-size: 2rem;
   text-decoration: none;
   text-align: center;
-  margin: 2rem;
+  margin: 5rem 2rem;
   padding: 1rem;
   width: 100%;
 

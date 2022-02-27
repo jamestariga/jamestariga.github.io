@@ -6,7 +6,7 @@ import NavBar from './NavBar/NavBar'
 import About from './About/About'
 import Skills from './Skills/Skills'
 import GlobalStyle from './GlobalStyle'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -22,14 +22,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Router>
       <NavBar />
-        <Routes>
-          <Route path="/" />
-          <Route path="/skills" />
-          <Route path="/projects" />
-        </Routes>
-      </Router>
       <About />
       <Skills />
     </>

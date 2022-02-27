@@ -20,9 +20,9 @@ const NavBar = () => {
           </LeftContainer>
           <RightContainer>
             <NavbarLinkContainer>
-              <NavBarLink to='/'>Home</NavBarLink>
-              <NavBarLink to='/skills'>Skills</NavBarLink>
-              <NavBarLink to='/projects'>Projects</NavBarLink>
+              <NavBarLink to='about' smooth='true'>About</NavBarLink>
+              <NavBarLink to='skills' smooth='true'>Skills</NavBarLink>
+              <NavBarLink to='projects' smooth='true'>Projects</NavBarLink>
               <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr)
@@ -35,9 +35,9 @@ const NavBar = () => {
         </NavbarInnerContainer>
         {extendNavbar && (
           <NavbarExtendedContainer data-aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
-            <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
-            <NavbarLinkExtended to="/">Skills</NavbarLinkExtended>
-            <NavbarLinkExtended to="/">Projects</NavbarLinkExtended>
+            <NavbarLinkExtended to='about' smooth='true'>About</NavbarLinkExtended>
+            <NavbarLinkExtended to='skills' smooth='true'>Skills</NavbarLinkExtended>
+            <NavbarLinkExtended to='projects' smooth='true'>Projects</NavbarLinkExtended>
           </NavbarExtendedContainer>
         )}
       </NavBarContainer>

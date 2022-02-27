@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <>
-      <AboutContainer data-aos="fade-right" data-aos-delay="1500" data-aos-mirror="false">
+      <AboutContainer id='about' data-aos="fade-right" data-aos-delay="1500" data-aos-mirror="false">
         <AboutInnerContainer>
           <LeftContainer>
             <ImageDisplay src={JamesPFP} alt='James' />
