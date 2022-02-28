@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const ProjectContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 2rem;
   flex-direction: column;
   height: auto;
-  padding: 2rem;
+  padding: 4rem;
   margin: 10rem 10rem 20rem 10rem;
   background: rgba( 255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
@@ -25,7 +25,7 @@ export const ProjectContainer = styled.div`
 
   @media (max-width: 650px) {
     margin: 10rem 2rem;
-    padding: 1rem;
+    padding: 2rem;
     grid-template-columns: 1fr;
   }
 `
