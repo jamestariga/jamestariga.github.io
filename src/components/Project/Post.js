@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   PostContainer, PostInnerContainer, PostTitle,
-  PostText, PostImage, PostDetail
+  PostText, PostImage, PostDetail, TitleContainer
 } from '../Styles/Post.styles'
 
 const Post = (props) => {
@@ -11,7 +11,9 @@ const Post = (props) => {
     <>
       <PostContainer>
         <PostInnerContainer>
-          <PostTitle>{ title }</PostTitle>
+          
+            <PostTitle>{ title }</PostTitle>
+          
           <PostImage src={ img } alt={ img }></PostImage>
           <PostText>{description}</PostText>
           <PostDetail>Tech Stack: { tech }</PostDetail>

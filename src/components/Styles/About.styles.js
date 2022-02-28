@@ -17,8 +17,11 @@ export const AboutContainer = styled.div`
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 0, 0.18);
 
-  @media (max-width: 970px) {
+  @media (max-width: 1198px) {
     margin: 10rem 5rem;
+  }
+
+  @media (max-width: 970px) {
     padding: 3rem 1.5rem;
   }
   

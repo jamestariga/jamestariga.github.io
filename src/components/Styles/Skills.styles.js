@@ -15,12 +15,12 @@ export const SkillsContainer = styled.div`
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 0, 0.18);
 
-  @media (max-width: 1129px) {
-    grid-template-columns: repeat(2, 1fr);;
+  @media (max-width: 1198px) {
+    margin: 10rem 5rem;
   }
 
-  @media (max-width: 970px) {
-    margin: 10rem 5rem;
+  @media (max-width: 1129px) {
+    grid-template-columns: repeat(2, 1fr);;
   }
 
   @media (max-width: 650px) {

@@ -4,6 +4,7 @@ import Post from './Post'
 import ProjectData from './ProjectData'
 
 const Project = () => {
+  
   return (
     <>
       <ProjectContainer id='projects' data-aos="fade-right" data-aos-delay="50">
