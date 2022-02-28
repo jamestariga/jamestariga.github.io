@@ -5,9 +5,8 @@ import 'aos/dist/aos.css'
 import NavBar from './NavBar/NavBar'
 import About from './About/About'
 import Skills from './Skills/Skills'
+import Project from './Project/Project'
 import GlobalStyle from './GlobalStyle'
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 function App() {
   useEffect(() => {
@@ -25,6 +24,7 @@ function App() {
       <NavBar />
       <About />
       <Skills />
+      <Project />
     </>
   )
 }

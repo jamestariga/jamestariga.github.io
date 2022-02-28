@@ -21,7 +21,7 @@ const NavBar = () => {
           <RightContainer>
             <NavbarLinkContainer>
               <NavBarLink to='about' smooth='true' offset={-180}>About</NavBarLink>
-              <NavBarLink to='skills' smooth='true' delay={200} duration={1500}>Skills</NavBarLink>
+              <NavBarLink to='skills' smooth='true' offset={-180} delay={200} duration={1500}>Skills</NavBarLink>
               <NavBarLink to='projects' smooth='true'>Projects</NavBarLink>
               <OpenLinksButton
               onClick={() => {
