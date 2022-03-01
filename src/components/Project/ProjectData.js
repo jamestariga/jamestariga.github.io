@@ -1,24 +1,39 @@
-import JamesPFP from '../../Images/JamesPFP.png'
+import ObjectDetection from '../../Images/ObjectDetection.jpg'
+import APOD from '../../Images/APOD.jpg'
+import Calculator from '../../Images/calculator.jpg'
+import Weather from '../../Images/weather.jpg'
+import Sudoku from '../../Images/sudoku-solver.jpg'
+import Ice from '../../Images/ice.jpg'
 
 const ProjectData = [
   {
-    title: 'NASA APOD', img: 'https://apod.nasa.gov/apod/image/2201/MoonstripsAnnotatedIG_crop1024.jpg',
+    title: 'NASA APOD', img: APOD,
     description: 'Test', tech: 'React, CSS, Axios'
   },
 
   {
-    title: 'NASA APOD', img: JamesPFP,
-    description: 'Test', tech: 'React, CSS, Axios'
+    title: 'Weather App', img: Weather,
+    description: 'Test', tech: 'JavaScript, HTML, CSS, Axios'
   },
 
   {
-    title: 'NASA APOD', img: JamesPFP,
-    description: 'Test', tech: 'React, CSS, Axios'
+    title: 'Object Detection', img: ObjectDetection,
+    description: 'Test', tech: 'Python | Tenserflow | COCO'
   },
 
   {
-    title: 'NASA APOD', img: JamesPFP,
-    description: 'Test', tech: 'React, CSS, Axios'
+    title: 'Sudoku Solver', img: Sudoku,
+    description: 'Test', tech: 'JavaScript, HTML, CSS, Axios'
+  },
+
+  {
+    title: 'Ice Breaker (Hackathon)', img: Ice,
+    description: 'Test', tech: 'Python, Discord API'
+  },
+
+  {
+    title: 'Calculator App', img: Calculator,
+    description: 'Test', tech: 'JavaScript, HTML, CSS'
   }
 
 ]

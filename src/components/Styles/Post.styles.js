@@ -4,7 +4,8 @@ export const PostContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  width: auto;
   background: rgba( 255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
@@ -15,13 +16,9 @@ export const PostContainer = styled.div`
 `
 
 export const PostInnerContainer = styled.div`
-  width: 100%;
+  width: auto;
   height: 100%;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 0 2rem;
 `
 
 export const PostTitle = styled.h3`
@@ -29,7 +26,7 @@ export const PostTitle = styled.h3`
 `
 
 export const PostText = styled.p`
-  font-size: 1rem;
+  font-size: 1.25rem;
 `
 
 export const PostImage = styled.img`

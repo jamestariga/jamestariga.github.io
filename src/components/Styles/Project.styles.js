@@ -2,9 +2,8 @@ import styled from "styled-components"
 
 export const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  flex-direction: column;
   height: auto;
   padding: 2rem;
   margin: 10rem 10rem 20rem 10rem;
@@ -15,9 +14,9 @@ export const ProjectContainer = styled.div`
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 0, 0.18);
 
-  @media (max-width: 1672px) {
+  /* @media (max-width: 1672px) {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } */
 
   @media (max-width: 1384px) {
     grid-template-columns: repeat(2, 1fr);
@@ -34,5 +33,6 @@ export const ProjectContainer = styled.div`
 
   @media (max-width: 650px) {
     margin: 10rem 2rem;
+    padding: 2rem;
   }
 `
