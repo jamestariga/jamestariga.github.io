@@ -47,6 +47,13 @@ export const Filler = styled.div`
   width: ${props => props.completed};
   background-color: ${props => props.backgroundColor};
   border-radius: inherit;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode:both; 
+
+  @keyframes progressBar {
+  0% { width: 0; }
+  100% { width: ${props => props.animation}; }
+  }
 `
 
 export const Progress = styled.span`

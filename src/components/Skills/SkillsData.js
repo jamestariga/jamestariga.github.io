@@ -1,5 +1,5 @@
 const SkillsData = [
-  { bgColor: '#61DBFB', title: 'React', completed: '80%' },
+  { bgColor: '#61DBFB', title: 'React', completed: '80%'},
   { bgColor: '#f0db4f', title: 'JavaScript', completed: '90%' },
   { bgColor: '#e34c26', title: 'HTML', completed: '95%' },
   { bgColor: '#2965f1', title: 'CSS', completed: '85%' },

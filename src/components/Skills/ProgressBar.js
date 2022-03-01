@@ -1,13 +1,43 @@
+import { useEffect, useState, useRef, useMemo } from 'react'
 import {
   Container, InnerContainer, MainContainer,
   ProgressContainer, Filler,
   Progress, Title, TitleContainer
 } from '../Styles/ProgressBar.styles'
-import SkillsData from './SkillsData'
 
 const ProgressBar = (props) => {
   const { bgColor, title, completed } = props
+  
+  const containerRef = useRef(null)
+  const [isVisible, setIsVisible] = useState(false)
 
+  const callbackFunction = (entries) => {
+    const [entry] = entries
+    setIsVisible(entry.isIntersecting)
+  }
+
+  const options = useMemo(() => ({
+    root: null,
+    rootMargin: "100px",
+    threshold: 0.75
+  }), []
+  )
+
+  useEffect(() => {
+    let observerRefValue = null
+
+    const observer = new IntersectionObserver(callbackFunction, options)
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current)
+      observerRefValue = containerRef.current
+    }
+    
+    return () => {
+      if(observerRefValue) observer.unobserve(observerRefValue)
+    }
+  }, [containerRef, options])
+  
   return (
     <>
       <Container>
@@ -16,10 +46,10 @@ const ProgressBar = (props) => {
             <Title>{title}</Title>
           </TitleContainer>
           <MainContainer>
-            <ProgressContainer>
-              <Filler backgroundColor={ bgColor } completed={ completed } >
+            <ProgressContainer ref={containerRef}>
+              {isVisible ? (<Filler backgroundColor={ bgColor } completed={ completed }>
                 <Progress> {`${completed}`} </Progress>
-              </Filler>
+              </Filler>) : ''}
             </ProgressContainer>
           </MainContainer>
         </InnerContainer>
@@ -27,5 +57,6 @@ const ProgressBar = (props) => {
     </>
   )
 }
+
 
 export default ProgressBar
