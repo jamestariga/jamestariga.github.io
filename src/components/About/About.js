@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../Header/Header'
 import {
   AboutContainer, AboutInnerContainer, LeftContainer,
   DescriptionContainer, ImageDisplay, Title,
@@ -11,6 +12,7 @@ const About = () => {
 
   return (
     <>
+      <Header title="About Me" />
       <AboutContainer id='about' data-aos="fade-right" data-aos-delay="1500" data-aos-mirror="false">
         <AboutInnerContainer>
           <LeftContainer>

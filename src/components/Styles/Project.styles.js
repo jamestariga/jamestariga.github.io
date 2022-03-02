@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const ProjectContainer = styled.div`
   display: grid;
@@ -6,7 +6,7 @@ export const ProjectContainer = styled.div`
   grid-gap: 2rem;
   height: auto;
   padding: 2rem;
-  margin: 10rem 10rem 20rem 10rem;
+  margin: 0 10rem 20rem 10rem;
   background: rgba( 255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
@@ -23,16 +23,17 @@ export const ProjectContainer = styled.div`
   }
 
   @media (max-width: 1198px) {
-    margin: 10rem 5rem;
+    margin: 0 5rem 10rem 5rem;
   }
 
   @media (max-width: 829px) {
     grid-template-columns: 1fr;
-    padding: 4rem;
+    grid-gap: 1rem;
+    padding: 1.5rem;
   }
 
   @media (max-width: 650px) {
-    margin: 10rem 2rem;
-    padding: 2rem;
+    margin: 0 2rem 5rem 2rem;
+    padding: 1rem;
   }
 `

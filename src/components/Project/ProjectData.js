@@ -27,7 +27,7 @@ const ProjectData = [
   },
 
   {
-    title: 'Ice Breaker (Hackathon)', img: Ice,
+    title: 'Hackathon', img: Ice,
     description: 'Test', tech: 'Python, Discord API'
   },
 

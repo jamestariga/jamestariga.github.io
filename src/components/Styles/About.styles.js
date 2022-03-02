@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { BsLinkedin } from 'react-icons/bs'
 import { SiDevpost } from 'react-icons/si'
@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   height: auto;
   padding: 5rem;
-  margin: 10rem 10rem 20rem 10rem;
+  margin: 0 10rem 10rem 10rem;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
@@ -18,7 +18,7 @@ export const AboutContainer = styled.div`
   border: 1px solid rgba(255, 255, 0, 0.18);
 
   @media (max-width: 1198px) {
-    margin: 10rem 5rem;
+    margin: 0 5rem 5rem 5rem;
   }
 
   @media (max-width: 970px) {
@@ -26,7 +26,7 @@ export const AboutContainer = styled.div`
   }
   
   @media (max-width: 650px) {
-    margin: 10rem 2rem;
+    margin: 0 2rem 2rem 2rem;
     padding: 1rem;
   }
 `

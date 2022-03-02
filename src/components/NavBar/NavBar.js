@@ -13,8 +13,8 @@ const NavBar = () => {
 
   return (
     <>
-      <NavBarContainer extendNavbar={ extendNavbar } data-aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
-        <NavbarInnerContainer>
+      <NavBarContainer extendNavbar={ extendNavbar }>
+        <NavbarInnerContainer data-aos="slide-down" data-aos-mirror="false" data-aos-delay="50">
           <LeftContainer>
             <Branding>&#123; James Tariga &#125;</Branding>
           </LeftContainer>
@@ -22,7 +22,7 @@ const NavBar = () => {
             <NavbarLinkContainer>
               <NavBarLink to='about' smooth='true' offset={-180}>About</NavBarLink>
               <NavBarLink to='skills' smooth='true' offset={-180} delay={200} duration={1500}>Skills</NavBarLink>
-              <NavBarLink to='projects' smooth='true'>Projects</NavBarLink>
+              <NavBarLink to='projects' smooth='true' offset={-200} delay={200}>Projects</NavBarLink>
               <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr)

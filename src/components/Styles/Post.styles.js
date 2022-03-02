@@ -19,14 +19,26 @@ export const PostInnerContainer = styled.div`
   width: auto;
   height: 100%;
   padding: 0 2rem;
+
+  @media (max-width: 650px) {
+    padding: 0 1rem;
+  }
 `
 
 export const PostTitle = styled.h3`
   font-size: 1.5rem;
+
+  @media (max-width: 650px) {
+    font-size: 1rem;
+  }
 `
 
 export const PostText = styled.p`
   font-size: 1.25rem;
+
+  @media (max-width: 650px) {
+    font-size: 0.8rem;
+  }
 `
 
 export const PostImage = styled.img`
@@ -36,4 +48,7 @@ export const PostImage = styled.img`
 
 export const PostDetail = styled.h4`
   font-weight: bold;
+  @media (max-width: 650px) {
+    font-size: 0.8rem;
+  }
 `

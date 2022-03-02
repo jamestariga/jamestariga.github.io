@@ -47,9 +47,9 @@ const ProgressBar = (props) => {
           </TitleContainer>
           <MainContainer>
             <ProgressContainer ref={containerRef}>
-              {isVisible ? (<Filler backgroundColor={ bgColor } completed={ completed }>
+              {isVisible && (<Filler backgroundColor={ bgColor } completed={ completed }>
                 <Progress> {`${completed}`} </Progress>
-              </Filler>) : ''}
+              </Filler>)}
             </ProgressContainer>
           </MainContainer>
         </InnerContainer>

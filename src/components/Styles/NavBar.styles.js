@@ -100,10 +100,18 @@ export const OpenLinksButton = styled.button`
 `
 
 export const NavbarExtendedContainer = styled.div`
+  /* position: fixed;
+  z-index: 1000;
+  background: rgba(231, 231, 156, 0.6);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  width: 100%;
+  height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5rem;
+  /* justify-content: center; */
 
   @media (min-width: 971px) {
     display: none;
