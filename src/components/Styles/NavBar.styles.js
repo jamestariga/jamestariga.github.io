@@ -6,7 +6,10 @@ export const NavBarContainer = styled.nav`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: ${(props) => (props.extendNavbar ? '100vh' : '80px')};
+  /* This will only work if links routes to another page otherwise it will create height issues when using the burger menu
+  height: ${(props) => (props.extendNavbar ? '100vh' : '80px')}; 
+  */
+  height: auto;
 
   @media (min-width: 971px) {
     height: 80px;
@@ -100,18 +103,17 @@ export const OpenLinksButton = styled.button`
 `
 
 export const NavbarExtendedContainer = styled.div`
-  /* position: fixed;
-  z-index: 1000;
+  position: fixed;
+  z-index: 10000;
   background: rgba(231, 231, 156, 0.6);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   width: 100%;
-  height: 100vh; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem;
-  /* justify-content: center; */
+  margin-top: 5rem;
 
   @media (min-width: 971px) {
     display: none;

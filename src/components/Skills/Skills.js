@@ -8,7 +8,7 @@ const Skills = () => {
 
   return (
     <>
-      <Header title='My Skills'/>
+      <Header title='My Skills' />
       <SkillsContainer id='skills' data-aos="fade-right" data-aos-delay="50">
         {SkillsData.map((item, idx) => {
           return (

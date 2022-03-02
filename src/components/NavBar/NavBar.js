@@ -13,16 +13,16 @@ const NavBar = () => {
 
   return (
     <>
-      <NavBarContainer extendNavbar={ extendNavbar }>
-        <NavbarInnerContainer data-aos="slide-down" data-aos-mirror="false" data-aos-delay="50">
+      <NavBarContainer>
+        <NavbarInnerContainer data-aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
           <LeftContainer>
             <Branding>&#123; James Tariga &#125;</Branding>
           </LeftContainer>
           <RightContainer>
             <NavbarLinkContainer>
               <NavBarLink to='about' smooth='true' offset={-180}>About</NavBarLink>
-              <NavBarLink to='skills' smooth='true' offset={-180} delay={200} duration={1500}>Skills</NavBarLink>
-              <NavBarLink to='projects' smooth='true' offset={-200} delay={200}>Projects</NavBarLink>
+              <NavBarLink to='skills' smooth='true' offset={-180}>Skills</NavBarLink>
+              <NavBarLink to='projects' smooth='true' offset={-180}>Projects</NavBarLink>
               <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr)
@@ -34,10 +34,10 @@ const NavBar = () => {
           </RightContainer>
         </NavbarInnerContainer>
         {extendNavbar && (
-          <NavbarExtendedContainer data-aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
-            <NavbarLinkExtended to='about' smooth='true'>About</NavbarLinkExtended>
-            <NavbarLinkExtended to='skills' smooth='true'>Skills</NavbarLinkExtended>
-            <NavbarLinkExtended to='projects' smooth='true'>Projects</NavbarLinkExtended>
+          <NavbarExtendedContainer data-aos="fade-right" data-aos-mirror="false" data-aos-delay="50">
+            <NavbarLinkExtended to='about' smooth='true' offset={-200}>About</NavbarLinkExtended>
+            <NavbarLinkExtended to='skills' smooth='true' offset={-200}>Skills</NavbarLinkExtended>
+            <NavbarLinkExtended to='projects' smooth='true' offset={-200}>Projects</NavbarLinkExtended>
           </NavbarExtendedContainer>
         )}
       </NavBarContainer>

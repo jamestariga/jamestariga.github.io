@@ -6,7 +6,7 @@ const Header = (props) => {
 
   return (
     <>
-      <TitleContainer data-aos='fade-right' data-aos-offset='100' >
+      <TitleContainer data-aos='fade-right' data-aos-offset='100' data-aos-duration='1000'>
         <TitleText>{ title }</TitleText>
       </TitleContainer>
     </>
