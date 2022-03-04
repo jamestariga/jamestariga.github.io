@@ -53,6 +53,10 @@ export const NavbarInnerContainer = styled.div`
   width: 100%;
   height: 80px;
   display: flex;
+
+  @media (max-width: 971px) {
+    position: relative;
+  }
 `
 
 export const NavbarLinkContainer = styled.div`
