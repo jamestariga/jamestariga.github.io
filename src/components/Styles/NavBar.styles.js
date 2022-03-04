@@ -44,7 +44,7 @@ export const RightContainer = styled.div`
 
 export const NavbarInnerContainer = styled.div`
   z-index: 10000;
-  background: rgba(231, 231, 156, 0.6);
+  background: rgba(105, 106, 110, 0.6);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   position: fixed;
@@ -66,10 +66,41 @@ export const NavBarLink = styled(Link)`
   font-size: 1.5rem;
   padding: 1rem;
   margin: 1rem;
+  font-weight: 800;
 
   @media (max-width: 971px) {
     display: none;
   }
+
+  &:hover {
+    color: #fff;
+  }
+  
+  &::after {
+    position: relative;
+    content: '';
+    height: 1px;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    background: #ff9966;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover::after{
+    opacity: 1;
+    visibility: visible;
+    height: 5px;
+    transform: scale(1.2);
+    margin-bottom: 20px;
+  }
+
 `
 
 export const NavbarLinkExtended = styled(Link)`
@@ -105,7 +136,7 @@ export const OpenLinksButton = styled.button`
 export const NavbarExtendedContainer = styled.div`
   position: fixed;
   z-index: 10000;
-  background: rgba(231, 231, 156, 0.6);
+  background: rgba(105, 106, 110, 0.6);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   width: 100%;
@@ -121,10 +152,11 @@ export const NavbarExtendedContainer = styled.div`
 `
 
 export const Branding = styled.h1`
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&family=Poppins:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&family=Poppins:wght@400&display=swap');
   font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
   color: #ff9966;
+  cursor: pointer;
 
   @media (max-width: 971px) {
     font-size: 1.75rem;

@@ -27,6 +27,7 @@ export const PostInnerContainer = styled.div`
 
 export const PostTitle = styled.h3`
   font-size: 1.5rem;
+  text-align: center;
 
   @media (max-width: 650px) {
     font-size: 1rem;
@@ -34,10 +35,11 @@ export const PostTitle = styled.h3`
 `
 
 export const PostText = styled.p`
-  font-size: 1.25rem;
+  font-size: 1rem;
+  text-align: center;
 
   @media (max-width: 650px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 `
 
@@ -48,7 +50,12 @@ export const PostImage = styled.img`
 
 export const PostDetail = styled.h4`
   font-weight: bold;
+  margin-top: 0;
   @media (max-width: 650px) {
     font-size: 0.8rem;
   }
+`
+
+export const PostLink = styled.a`
+  text-decoration: none;
 `

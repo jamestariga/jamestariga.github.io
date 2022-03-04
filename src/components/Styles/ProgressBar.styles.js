@@ -69,7 +69,7 @@ export const Progress = styled.span`
 export const TitleContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 30%;
+  width: auto;
   justify-content: flex-start;
   padding: 0 2rem;
 `

@@ -12,7 +12,7 @@ const Project = () => {
       <ProjectContainer id='projects' data-aos="fade-right" data-aos-delay="50">
         {ProjectData.map((item, idx) => {
           return (
-            <Post key={idx} title={item.title} img={item.img}
+            <Post key={idx} title={item.title} link={item.link} img={item.img}
               description={item.description} tech={item.tech} />
           )
         })}

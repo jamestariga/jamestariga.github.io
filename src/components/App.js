@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import NavBar from './NavBar/NavBar'
+import Parts from './Particles/Parts'
 import About from './About/About'
 import Skills from './Skills/Skills'
 import Project from './Project/Project'
@@ -22,6 +23,7 @@ function App() {
     <>
       <GlobalStyle />
       <NavBar />
+      <Parts />
       <About />
       <Skills />
       <Project />

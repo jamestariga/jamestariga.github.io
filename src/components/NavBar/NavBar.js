@@ -34,7 +34,7 @@ const NavBar = () => {
           </RightContainer>
         </NavbarInnerContainer>
         {extendNavbar && (
-          <NavbarExtendedContainer data-aos="fade-right" data-aos-mirror="false" data-aos-delay="50">
+          <NavbarExtendedContainer data-aos="fade-right" data-aos-mirror="false" data-aos-duration="1000">
             <NavbarLinkExtended to='about' smooth='true' offset={-200}>About</NavbarLinkExtended>
             <NavbarLinkExtended to='skills' smooth='true' offset={-200}>Skills</NavbarLinkExtended>
             <NavbarLinkExtended to='projects' smooth='true' offset={-200}>Projects</NavbarLinkExtended>
