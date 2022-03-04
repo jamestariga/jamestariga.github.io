@@ -4,14 +4,14 @@ export const TitleContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 8rem 10rem 0 10rem;
+  margin: 0 10rem;
 
   @media (max-width: 1198px) {
-    margin: 8rem 5rem 0 5rem;
+    margin: 0 5rem;
   }
 
   @media (max-width: 650px) {
-    margin: 8rem 2rem 0 2rem;
+    margin: 0 2rem;
   }
 `
 

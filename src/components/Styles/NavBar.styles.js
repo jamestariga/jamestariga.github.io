@@ -10,8 +10,8 @@ export const NavBarContainer = styled.nav`
   height: ${(props) => (props.extendNavbar ? '100vh' : '80px')}; 
   */
   height: auto;
-  margin-top: 0;
-
+  /* position: fixed; */
+  margin-bottom: 8rem;
   @media (min-width: 971px) {
     height: 80px;
   }
@@ -44,19 +44,15 @@ export const RightContainer = styled.div`
 `
 
 export const NavbarInnerContainer = styled.div`
-  /* z-index: 10000; */
+  z-index: 10000;
   background: rgba(105, 106, 110, 0.6);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  /* position: fixed;
-  overflow: hidden; */
+  position: fixed;
+  overflow: hidden;
   width: 100%;
   height: 80px;
   display: flex;
-
-  @media (max-width: 971px) {
-    height: auto;
-  }
 `
 
 export const NavbarLinkContainer = styled.div`
@@ -114,7 +110,6 @@ export const NavbarLinkExtended = styled(Link)`
   font-size: 2rem;
   text-decoration: none;
   text-align: center;
-  margin: 2rem;
   padding: 1rem;
   width: 100%;
 
