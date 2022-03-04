@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <>
       <NavBarContainer>
-        <NavbarInnerContainer data-aos="fade-down" data-aos-mirror="false" data-aos-delay="50">
+        <NavbarInnerContainer>
           <LeftContainer>
             <Branding>&#123; James Tariga &#125;</Branding>
           </LeftContainer>
