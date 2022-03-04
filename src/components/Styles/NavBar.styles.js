@@ -10,6 +10,7 @@ export const NavBarContainer = styled.nav`
   height: ${(props) => (props.extendNavbar ? '100vh' : '80px')}; 
   */
   height: auto;
+  margin-top: 0;
 
   @media (min-width: 971px) {
     height: 80px;
@@ -52,6 +53,10 @@ export const NavbarInnerContainer = styled.div`
   width: 100%;
   height: 80px;
   display: flex;
+
+  @media (max-width: 971px) {
+    height: auto;
+  }
 `
 
 export const NavbarLinkContainer = styled.div`
