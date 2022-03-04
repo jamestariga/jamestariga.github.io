@@ -44,12 +44,12 @@ export const RightContainer = styled.div`
 `
 
 export const NavbarInnerContainer = styled.div`
-  z-index: 10000;
+  /* z-index: 10000; */
   background: rgba(105, 106, 110, 0.6);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  position: fixed;
-  overflow: hidden;
+  /* position: fixed;
+  overflow: hidden; */
   width: 100%;
   height: 80px;
   display: flex;
