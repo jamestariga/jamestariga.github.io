@@ -9,9 +9,10 @@ export const NavBarContainer = styled.nav`
   /* This will only work if links routes to another page otherwise it will create height issues when using the burger menu
   height: ${(props) => (props.extendNavbar ? '100vh' : '80px')}; 
   */
-  height: auto;
+  height: 80px;
   /* position: fixed; */
-  margin-bottom: 8rem;
+  padding-bottom: 8rem;
+  
   @media (min-width: 971px) {
     height: 80px;
   }
@@ -55,7 +56,8 @@ export const NavbarInnerContainer = styled.div`
   display: flex;
 
   @media (max-width: 971px) {
-    position: relative;
+    /* position: relative; */
+    
   }
 `
 
@@ -116,6 +118,7 @@ export const NavbarLinkExtended = styled(Link)`
   text-align: center;
   padding: 1rem;
   width: 100%;
+  margin: 2rem;
 
   &:hover {
     background-color: transparent;
