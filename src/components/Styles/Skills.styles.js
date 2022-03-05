@@ -4,7 +4,6 @@ export const SkillsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
-  flex-direction: column;
   height: auto;
   padding: 2rem;
   margin: 0 10rem 10rem 10rem;

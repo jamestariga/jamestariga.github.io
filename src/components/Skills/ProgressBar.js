@@ -6,7 +6,7 @@ import {
 } from '../Styles/ProgressBar.styles'
 
 const ProgressBar = (props) => {
-  const { bgColor, title, completed } = props
+  const { bgColor, title, completed, animation } = props
   
   const containerRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -47,7 +47,7 @@ const ProgressBar = (props) => {
           </TitleContainer>
           <MainContainer>
             <ProgressContainer ref={containerRef}>
-              {isVisible && (<Filler backgroundColor={ bgColor } completed={ completed }>
+              {isVisible && (<Filler backgroundColor={ bgColor } completed={ completed } animation={ animation }>
                 <Progress> {`${completed}`} </Progress>
               </Filler>)}
             </ProgressContainer>

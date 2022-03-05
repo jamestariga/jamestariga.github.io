@@ -40,7 +40,7 @@ export const ProgressContainer = styled.div`
 
 export const Filler = styled.div`
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   transition: width 1s ease-in-out;
   align-items: center;
   height: 100%;
@@ -61,7 +61,7 @@ export const Progress = styled.span`
   color: #fff;
   font-weight: bold;
   
-  @media (max-width: 970px) {
+  @media (max-width: 971px) {
     font-size: smaller;
   }
 `
@@ -78,7 +78,7 @@ export const Title = styled.h5`
   font-size: 1.5rem;
   color: #fff;
 
-  @media (max-width: 970px) {
+  @media (max-width: 971px) {
     font-size: 1rem;
   }
 `

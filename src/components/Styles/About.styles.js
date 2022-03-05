@@ -21,7 +21,7 @@ export const AboutContainer = styled.div`
     margin: 0 5rem 5rem 5rem;
   }
 
-  @media (max-width: 970px) {
+  @media (max-width: 971px) {
     padding: 3rem 1.5rem;
   }
   
