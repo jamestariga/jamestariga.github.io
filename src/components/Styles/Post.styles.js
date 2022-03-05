@@ -29,6 +29,10 @@ export const PostTitle = styled.h3`
   font-size: 1.5rem;
   text-align: center;
 
+  @media (max-width: 971px) {
+    font-size: 1.25rem;
+  }
+
   @media (max-width: 650px) {
     font-size: 1rem;
   }
@@ -39,20 +43,29 @@ export const PostText = styled.p`
   text-align: center;
 
   @media (max-width: 650px) {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 `
 
 export const PostImage = styled.img`
-  max-width: 100%;
+  width: 100%;
   height: 100%;
+
+  @media (max-width: 450px) {
+    max-width: 250px;
+  }
 ` 
 
 export const PostDetail = styled.h4`
   font-weight: bold;
   margin-top: 0;
+
+  @media (max-width: 971px) {
+    font-size: 0.9rem;
+  }
+  
   @media (max-width: 650px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 `
 
