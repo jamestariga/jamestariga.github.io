@@ -43,7 +43,12 @@ export const PostText = styled.p`
   text-align: center;
 
   @media (max-width: 650px) {
-    font-size: 0.6rem;
+    margin: 1rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 0.7rem;
+    margin: 1rem 1rem 0 1rem;
   }
 `
 
@@ -58,13 +63,12 @@ export const PostImage = styled.img`
 
 export const PostDetail = styled.h4`
   font-weight: bold;
-  margin-top: 0;
 
   @media (max-width: 971px) {
     font-size: 0.9rem;
   }
   
-  @media (max-width: 650px) {
+  @media (max-width: 450px) {
     font-size: 0.7rem;
   }
 `
