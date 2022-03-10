@@ -9,6 +9,7 @@ const SkillsData = [
   { bgColor: '#000', title: 'Git', completed: '70%' },
   { bgColor: '#787CB5', title: 'PHP', completed: '45%' },
   { bgColor: '#f9dd94', title: 'UI Design', completed: '65%' },
+  { bgColor: '#2965f1', title: 'TailwindCSS', completed: '60%' },
 ]
 
 export default SkillsData
